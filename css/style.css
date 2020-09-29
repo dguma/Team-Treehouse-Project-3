@@ -1,0 +1,92 @@
+/* CSS Document */
+* {
+  	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: auto;
+}
+
+main {
+	padding: 2em 1em;
+}
+
+legend {
+	text-align: left;
+}
+
+.contact-information input, select {
+	border: none;
+	border-radius: 3px;
+	padding: 1.5em 1em;
+	float: right;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+input::placeholder {
+	text-align: right;
+}
+
+fieldset {
+	border:  none;
+}
+
+.header-content {
+	padding: 1em;
+}
+
+.space {
+	padding-top: 1em;
+}
+
+.page-title {
+	background-color: #000029;
+	color: white;
+	height: 2.5em;
+	padding: .65em;
+	text-transform: uppercase;
+	font-size: 140%;
+}
+
+.contact-information label {
+	float: left;
+	padding: 1em 0 1em 0;
+}
+
+.contact-information {
+	margin: auto;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+}
+
+.newsletter-checkboxes label {
+	display: inline-block;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+
+.newsletter-checkboxes input, span {
+	vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+	.contact-information {
+		width: 65%;
+	}
+	
+	.contact-information input {
+		width: 70%;
+	}
+	
+	.contact-information label {
+/*		margin-left: 1em;*/
+	}
+		
+}
