@@ -10,6 +10,7 @@ body {
 	height: 100vh;
 	overflow: auto;
 	font-family: 'Raleway', sans-serif;
+	background-color: azure;
 }
 
 main {
@@ -45,7 +46,7 @@ fieldset {
 }
 
 .header-content {
-	padding: 1em;
+	padding: .5em;
 }
 
 .top-line {
@@ -66,10 +67,11 @@ fieldset {
 
 .contact-information {
 	padding: 0;
-	margin: 2em 0;
+	margin: 2em 0 3em 0;
 	display: flex;
 	flex-flow: column;
 	justify-content: space-around;
+	text-align: left;
 }
 
 .contact-information input, select {
@@ -83,7 +85,7 @@ fieldset {
 
 .contact-information label {
 	float: left;
-	padding: 1em 0 1em 0;
+	padding: .5em 0;
 }
 
 .zipcode {
@@ -92,7 +94,7 @@ fieldset {
 
 .newsletter {
 	text-align: left;
-	margin-top: 1em;
+	margin-top: 2em;
 	padding: 0;
 }
 
@@ -135,21 +137,18 @@ fieldset {
 }
 
 @media screen and (min-width: 768px) {
-	.contact-information {
-		width: 70%;
-		margin: 2em auto;
-	}
 	
 	.contact-information input, select {
-		width: 70%;
+		width: 80%;
 	}
 	
 	.contact-information div {
-		padding-top: 1em;
+		padding: 2.5em 0;
 	}
 	
-	.zipcode {
-		margin-left: 15%;
+	div .zipcode {
+		margin-right: 40%;
+		width: 40%;
 	}
 		
 }

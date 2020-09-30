@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
 	<hr class="top-line" />
 	<form>
 	
-		<feildset class="contact-information">
+		<fieldset class="contact-information">
 		
 			<legend><h3>Contact Information</h3></legend>
 			
@@ -41,22 +41,22 @@
 			
 			<div>
 				<label for="phone">Phone Number</label>
-				<input type="tel" id="phone" name="Phone Number"/>
+				<input type="tel" id="phone" name="Phone Number" placeholder="Please enter as 123-456-7890"/>
 			</div>
 			
 			<div>
 				<label for="address">Street Address</label>
-				<input type="text" id="address" name="Address"/>
+				<input type="text" id="address" name="Address" placeholder="Please include apt # or suite #"/>
 			</div>
 			
 			<div>
 				<label for="city">City</label>
-				<input type="text" id="city" name="City"/>
+				<input type="text" id="city" name="City" />
 			</div>
 			
 			<div>
 				<label for="state">State</label>
-				<select type="text" id="state" name="state">
+				<select id="state" name="states">
 					<option value="" disabled selected hidden>Choose State</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
@@ -114,12 +114,11 @@
 			
 			<div>
 				<label for="zip" class="zipcode-label">Zip Code</label>
-				<div class="zipcode">
-					<input type="text" id="zip" name="Zip"/>
-				</div>
+				<input type="text" id="zip" name="Zip" class="zipcode"/>
+				
 			</div>
 			
-		</feildset>
+		</fieldset>
 		
 		<hr class="bottom-line" />
 		
@@ -152,11 +151,11 @@
 				<p>Newsletter format</p>
 				
 				<label for="htmlOption">
-					<input type="radio" value="html-option" name="HTML" id="htmlOption"/><span>HTML</span>
+					<input type="radio" value="html-option" name="newsletter-format" id="htmlOption"/><span>HTML</span>
 				</label>
 				
 				<label for="plainTextOption">
-					<input type="radio" value="plain-text" name="Plain text" id="plainTextOption"/><span>Plain text</span>
+					<input type="radio" value="plain-text" name="newsletter-format" id="plainTextOption"/><span>Plain text</span>
 				</label>
 				
 			</div>
@@ -166,7 +165,7 @@
 				<p>Other topics you'd like to hear about</p>
 			
 				<label for="feedBack"></label>
-				<textarea id="feedBack" name="feedback" cols="20" rows="4"></textarea>
+				<textarea id="feedBack" name="feedback" cols="20" rows="4" placeholder="Do you think we should include anything else?"></textarea>
 				
 			</div>
 			
