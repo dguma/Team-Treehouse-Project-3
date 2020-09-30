@@ -1,15 +1,15 @@
 /* CSS Document */
 * {
   	box-sizing: border-box;
-	margin: 0;
 }
 
 body {
 	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 1em 0;
 	height: 100vh;
 	overflow: auto;
+	font-family: 'Raleway', sans-serif;
 }
 
 main {
@@ -20,13 +20,11 @@ legend {
 	text-align: left;
 }
 
-.contact-information input, select {
-	border: none;
-	border-radius: 3px;
-	padding: 1.5em 1em;
-	float: right;
-	width: 100%;
-	background-color: #f2f2f2;
+input:focus,
+textarea:focus {
+	background-color: rgba(0, 0, 41, .10);
+	transition: .33s;
+	transform: scale(1.0125);
 }
 
 input::placeholder {
@@ -35,14 +33,6 @@ input::placeholder {
 
 fieldset {
 	border:  none;
-}
-
-.header-content {
-	padding: 1em;
-}
-
-.space {
-	padding-top: 1em;
 }
 
 .page-title {
@@ -54,39 +44,112 @@ fieldset {
 	font-size: 140%;
 }
 
+.header-content {
+	padding: 1em;
+}
+
+.top-line {
+	border-top: 6px solid #000029;
+	border-bottom: 2px solid #000029;
+	padding: 3px 0;
+	border-left: none;
+	border-right: none;
+}
+
+.bottom-line {
+	border: 2px solid #000029;
+}
+
+.space {
+	padding-top: 1em;
+}
+
+.contact-information {
+	padding: 0;
+	margin: 2em 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+.contact-information input, select {
+	border: none;
+	border-radius: 3px;
+	padding: 1.5em 1em;
+	float: right;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
 .contact-information label {
 	float: left;
 	padding: 1em 0 1em 0;
 }
 
-.contact-information {
-	margin: auto;
+.zipcode {
+	width: 50%;
+}
+
+.newsletter {
+	text-align: left;
+	margin-top: 1em;
+	padding: 0;
+}
+
+.newsletter div {
+	padding-bottom: 1em;
+}
+
+.newsletter-feedback textarea {
+	margin-top: 1em;
+	width: 100%;
+	height: 150px;
+}
+
+.newsletter-checkboxes,
+.newsletter-radios {
 	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-around;
+	flex-flow: column;
 }
 
-.newsletter-checkboxes label {
-	display: inline-block;
-	padding-right: 10px;
-	white-space: nowrap;
+.newsletter-checkboxes input, label,
+.newsletter-radios input, label {
+	margin-top: .5em;
 }
 
-.newsletter-checkboxes input, span {
-	vertical-align: middle;
+.newsletter-checkboxes span,
+.newsletter-radios span {
+	padding-left: 1em;
+}
+
+#submitButton {
+	width: 100%;
+	height: 70px;
+	background-color: #73EDFF;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 120%;
+	font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
 	.contact-information {
-		width: 65%;
+		width: 70%;
+		margin: 2em auto;
 	}
 	
-	.contact-information input {
+	.contact-information input, select {
 		width: 70%;
 	}
 	
-	.contact-information label {
-/*		margin-left: 1em;*/
+	.contact-information div {
+		padding-top: 1em;
+	}
+	
+	.zipcode {
+		margin-left: 15%;
 	}
 		
 }

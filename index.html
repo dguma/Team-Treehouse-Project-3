@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 <title>Online Registration</title>
 </head>
 
@@ -23,7 +22,7 @@
 	</header>
 
 <main>
-	<hr />
+	<hr class="top-line" />
 	<form>
 	
 		<feildset class="contact-information">
@@ -114,21 +113,23 @@
 			</div>
 			
 			<div>
-				<label for="zip">Zip Code</label>
-				<input type="text" id="zip" name="Zip"/>
+				<label for="zip" class="zipcode-label">Zip Code</label>
+				<div class="zipcode">
+					<input type="text" id="zip" name="Zip"/>
+				</div>
 			</div>
 			
 		</feildset>
 		
-		<hr />
+		<hr class="bottom-line" />
 		
 		<fieldset class="newsletter">
 		
 		<legend><h3>Newsletter</h3></legend>
 			
-		<p>Select the newsletters you would like to recieve</p>
-		<br />
 			<div class="newsletter-checkboxes">
+				
+				<p>Select the newsletters you would like to recieve</p>
 			
 				<label for="htmlNewsOption">
 					<input type="checkbox" value="html-news" name="HTML News" id="htmlNewsOption"/><span>HTML News</span>
@@ -141,22 +142,36 @@
 				<label for="javascriptNewsOption">
 					<input type="checkbox" value="javascript-news" name="Javascript News" id="javascriptNewsOption"/><span>Javascript News</span>
 				</label>
+				
 			</div>
 
-	  	<p>Newsletter format</p>
-		<br />
+	  	
+			
 			<div class="newsletter-radios">
-			<label for="htmlOption"></label>
-			<input type="radio" value="html-option" name="HTML" id="htmlOption"/>HTML
-			<label for="plainTextOption"></label>
-			<input type="radio" value="plain-text" name="Plain text" id="plainTextOption"/>Plain text
+				
+				<p>Newsletter format</p>
+				
+				<label for="htmlOption">
+					<input type="radio" value="html-option" name="HTML" id="htmlOption"/><span>HTML</span>
+				</label>
+				
+				<label for="plainTextOption">
+					<input type="radio" value="plain-text" name="Plain text" id="plainTextOption"/><span>Plain text</span>
+				</label>
+				
 			</div>
 			
-			<p>Other topics you'd like to hear about</p>
-			<label for="feedBack"></label>
-			<textarea id="feedBack" name="feedback" cols="20" rows="4"></textarea>
-
+			<div class="newsletter-feedback">
+				
+				<p>Other topics you'd like to hear about</p>
+			
+				<label for="feedBack"></label>
+				<textarea id="feedBack" name="feedback" cols="20" rows="4"></textarea>
+				
+			</div>
+			
 		</fieldset>
+		
 		<label for="submitButton"></label>
 		<input type="submit" value="Sign Up" name="submit-button" id="submitButton"/>
 	
